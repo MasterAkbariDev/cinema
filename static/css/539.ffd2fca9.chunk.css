@@ -1,2 +1,2 @@
 .banner:after{background-color:#0009;bottom:0;right:0}.banner:after,.movieModal{content:"";height:100%;left:0;position:absolute;top:0;width:100%}.movieModal{align-items:center;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);background-color:#00000080;box-shadow:0 0 40px #ffffff80;display:flex;justify-content:center;opacity:0;transition:all 1s ease-in-out;visibility:hidden;z-index:1500}.movieModal iframe{max-height:720px;max-width:1280px}.movieModal .modalClose{color:#fff;cursor:pointer;font-size:1.8rem;position:absolute;right:30px;top:30px}.movieModal.active{opacity:1;visibility:visible}
-/*# sourceMappingURL=561.9c224aec.chunk.css.map*/
+/*# sourceMappingURL=539.ffd2fca9.chunk.css.map*/
