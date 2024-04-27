@@ -10,7 +10,6 @@ export const FindMovie = createAsyncThunk("Content/FindMovies",
                 const Trailer = await axios(`https://api.kinocheck.de/movies?imdb_id=${response.data.imdbID}`)
                 const Trailer_ID = Trailer.data.trailer.youtube_video_id
                 response.data = { ...response.data, trailerLink: `https://www.youtube.com/embed/${Trailer_ID}` }
-                console.log(Trailer_ID);
             } catch (e) {
                 console.log(e);
             }
