@@ -4,7 +4,7 @@ import axios from "axios";
 export const FindMovie = createAsyncThunk("Content/FindMovies",
     async (searchQuery) => {
         try {
-            const response = await axios(`http://www.omdbapi.com/?t=${searchQuery}&apikey=${process.env.REACT_APP_API_KEY}`)
+            const response = await axios(`https://www.omdbapi.com/?t=${searchQuery}&apikey=${process.env.REACT_APP_API_KEY}`)
             const Poster = await axios(`https://wallhaven.cc/api/v1/search?q=${searchQuery}&resolutions=1920x1080`)
             try {
                 const Trailer = await axios(`https://api.kinocheck.de/movies?imdb_id=${response.data.imdbID}`)
